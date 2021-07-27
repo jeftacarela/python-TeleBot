@@ -72,7 +72,7 @@ def nearby_restaurant(message):
     bot.reply_to(chat_id,'These are the list :\n')
     for x in range(len(g['nearby_restaurants'])):
         print(ans['nearby_restaurants'][x]['restaurant']['name'])
-        bot.sendMessage(chat_id,g['nearby_restaurants'][x]['restaurant']['name'])        
+        bot.reply_to(chat_id,g['nearby_restaurants'][x]['restaurant']['name'])        
     print(ans['nearby_restaurants'][0]['restaurant']['name'])
     return
 
